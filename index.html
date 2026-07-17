@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudan AI Tutor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            🎓 Sudan AI Tutor
+        </div>
+
+        <button class="new-chat-btn" onclick="newChat()">
+            ➕ New Chat
+        </button>
+
+        <div class="menu">
+
+            <div class="menu-item">📖 English Grammar</div>
+
+            <div class="menu-item">🗣 Spoken English</div>
+
+            <div class="menu-item">✍ Writing Skills</div>
+
+            <div class="menu-item">➗ Mathematics</div>
+
+            <div class="menu-item">📚 Dictionary</div>
+
+            <div class="menu-item">📝 Practice Tests</div>
+
+            <div class="menu-item">⚙ Settings</div>
+
+        </div>
+
+    </div>
+
+    <!-- Main Area -->
+  <!-- Main Area -->
+<div class="main-content">
+
+    <!-- Welcome Dashboard -->
+    <div id="dashboard" class="dashboard">
+
+        <h1>🎓 Welcome to Sudan AI Tutor</h1>
+        <p class="tagline">Learn Better. Think Smarter. Speak Confidently.</p>
+
+        <div class="card-container">
+
+            <div class="subject-card grammar-card" onclick="startSubject('English Grammar')">
+                <div class="icon">📖</div>
+                <h3>English Grammar</h3>
+                <p>Learn grammar from basic to advanced.</p>
+            </div>
+
+            <div class="subject-card spoken-card" onclick="startSubject('Spoken English')">
+                <div class="icon">🗣</div>
+                <h3>Spoken English</h3>
+                <p>Improve your spoken English.</p>
+            </div>
+
+            <div class="subject-card writing-card" onclick="startSubject('Writing Skills')">
+                <div class="icon">✍</div>
+                <h3>Writing Skills</h3>
+                <p>Essays, letters and creative writing.</p>
+            </div>
+
+           <div class="subject-card maths-card" onclick="startSubject('Mathematics')">
+                <div class="icon">➗</div>
+                <h3>Mathematics</h3>
+                <p>Solve Maths step by step.</p>
+            </div>
+
+            <div class="subject-card dictionary-card" onclick="startSubject('Dictionary')">
+                <div class="icon">📚</div>
+                <h3>Dictionary</h3>
+                <p>Meaning, Hindi and examples.</p>
+            </div>
+
+            <div class="subject-card test-card" onclick="startSubject('Practice Tests')">
+                <div class="icon">📝</div>
+                <h3>Practice Tests</h3>
+                <p>Practice with quizzes.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Chat Area -->
+    <div id="chatBox"></div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+
+        <textarea id="prompt" placeholder="Ask Sudan AI Tutor anything..."></textarea>
+
+        <button onclick="askAI()">Send</button>
+
+    </div>
+
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
